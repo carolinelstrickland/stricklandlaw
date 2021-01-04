@@ -1,0 +1,31 @@
+.firstrow{
+    margin: 30px;
+    padding: 30px;
+    float:left;
+}
+
+.secondrow{
+    margin: 30px;
+    padding: 30px;
+    float: right;
+}
+
+.thirdrow{
+    float: left;
+}
+
+/* title of team member */
+h3{
+    padding: 10px;
+    font-weight: bold;
+    /* add font here */
+}
+
+.container{
+   background-color: rgb(192, 206, 206);
+}
+
+body{
+    background-color: rgb(192, 206, 206);
+}
+
