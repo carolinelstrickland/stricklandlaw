@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import TeamEmp from "../components/TeamEmp"
+import TeamEmp from "../component/TeamEmp"
 
 class Team extends Component {
     

@@ -1,17 +1,21 @@
 .firstrow{
-    margin: 30px;
-    padding: 30px;
-    float:left;
+    float: left;
 }
 
 .secondrow{
-    margin: 30px;
-    padding: 30px;
     float: right;
 }
 
 .thirdrow{
     float: left;
+}
+
+.fourthrow{
+    float:right;
+}
+
+.lastrow{
+    float:left;
 }
 
 /* title of team member */
