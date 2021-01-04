@@ -31,7 +31,7 @@ class Team extends Component {
 
                         </p>
                         <img src="https://www.google.com/imgres?imgurl=http%3A%2F%2Fqnimate.com%2Fwp-content%2Fuploads%2F2014%2F03%2Fimages2.jpg&imgrefurl=http%3A%2F%2Fqnimate.com%2Funderstanding-html-img-tag%2F&tbnid=RYBz6TYw2D7ZZM&vet=12ahUKEwjiuIfkuYHuAhXiGd8KHXFNB_kQMygGegUIARDMAQ..i&docid=2QpCn8mhLjh9DM&w=800&h=400&q=img&ved=2ahUKEwjiuIfkuYHuAhXiGd8KHXFNB_kQMygGegUIARDMAQ"></img>
-                        <p>Blurb</p>
+                        <p>Blub</p>
                         <a href={`mailto:chelsey.whisnant@strickland-law.com`}>Contact</a>
                     </div>
                 </div>
