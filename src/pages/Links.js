@@ -1,11 +1,10 @@
 import React from "react";
+import HelpfulLinks from "../component/HelpfulLinks"
 
 function Links () {
  return (
      <div>
-         <h1>
-             Hello World!
-         </h1>
+         <HelpfulLinks/>
      </div>
  )
 }
