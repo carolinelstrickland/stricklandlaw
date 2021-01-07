@@ -1,5 +1,6 @@
 import React from "react"
 import { init, sendForm } from 'emailjs-com';
+
 init('mariafcc01@gmail.com');
 
 const PrivacyPolForm =() => {
