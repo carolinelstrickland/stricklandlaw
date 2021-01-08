@@ -1,20 +1,21 @@
 import React from "react";
+import Fade from "react-reveal/Fade"
 
 const PrivacyPol = () => {
-        return (
-            <div>
-                <h1>
-                    Privacy Policy
-             </h1>
-
-                <div>
-                    <p>
+    return (
+        <div style={{fontFamily: "Work Sans", fontWeight:"bold" }}>
+            <Fade bottom>
+            <h1 style={{ textAlign: "center", fontFamily: "Work Sans" }}>
+                Privacy Policy
+            </h1>
+                <div style={{ padding:"10px" }}>
+                    <p style={{ textAlign: "center", fontFamily: "Work Sans" }}>
                         Strickland & Strickland, LLP / C. David Strickland, PC /
                     </p>
-                    <p>
+                    <p style={{ textAlign: "center", fontFamily: "Work Sans" }}>
                         Strickland Land Title, Inc.
                     </p>
-                    <p>
+                    <p style={{ textAlign: "center", fontFamily: "Work Sans" }}>
                         PRIVACY NOTICE
                     </p>
                     <p>
@@ -27,11 +28,11 @@ const PrivacyPol = () => {
                     We may collect nonpublic personal information about you from the following sources:
                     <br></br>
                         <br></br>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Information we receive from you, such as on applications or other forms.</li>
-                            <li class="list-group-item">Information about your transactions we secure from our files, or from our affiliates or others.</li>
-                            <li class="list-group-item">Information we receive from a consumer reporting agency.</li>
-                            <li class="list-group-item">Information that we receive from others involved in your transaction, such as the real estate agent or lender.</li>
+                        <ul>
+                            <li >Information we receive from you, such as on applications or other forms.</li>
+                            <li >Information about your transactions we secure from our files, or from our affiliates or others.</li>
+                            <li >Information we receive from a consumer reporting agency.</li>
+                            <li >Information that we receive from others involved in your transaction, such as the real estate agent or lender.</li>
                         </ul>
                         <br></br>
                         <br></br>
@@ -58,10 +59,11 @@ const PrivacyPol = () => {
                         <br></br>
                     </p>
                 </div>
-            </div>
+            </Fade>
+        </div>
 
-        )
-    
+    )
+
 }
 
 export default PrivacyPol;
