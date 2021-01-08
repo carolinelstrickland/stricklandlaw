@@ -1,11 +1,10 @@
 import React from "react";
+import ServicesInfo from "../component/ServicesInfo";
 
 function Services () {
  return (
      <div>
-         <h1>
-             Hello World!
-         </h1>
+         <ServicesInfo/>
      </div>
  )
 }
