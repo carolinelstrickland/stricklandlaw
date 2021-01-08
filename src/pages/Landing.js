@@ -1,5 +1,5 @@
 import React from "react";
-import LandingLayout from "../components/LandingLayout";
+import LandingLayout from "../component/LandingLayout";
 
 function Landing () {
  return (

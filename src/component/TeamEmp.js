@@ -8,7 +8,7 @@ class TeamEmp extends Component {
         return (
             <Zoom>
                 
-                    <div style={{ backgroundColor: "gray" }}>
+                    <div style={{ backgroundColor: "gray", fontFamily: "Work Sans"}}>
                         <div className="container float-left" >
                             <div className="row firstrow">
                                 <div className="col">
