@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NavBar() {
     return (
         <React.Fragment>
-            <Navbar bg="primary" expand="lg">
+            <Navbar style={{ fontFamily: "Work Sans", backgroundColor: "#F5F5F5"}} expand="lg">
                 <Navbar.Brand href="#home">Strickland and Strickland, LLP</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
+                    <Nav style={{ fontFamily: "Work Sans" }} className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/team">Meet Our Team</Nav.Link>
                         <Nav.Link href="/services">Services</Nav.Link>
