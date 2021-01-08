@@ -13,7 +13,7 @@ function LandingLayout() {
                     <a href={`mailto:info@strickland-law.com`}><li>Email: info@strickland-law.com</li></a>
                 </ul>
                 <img style={{ paddingTop: "10px", marginRight: "auto", marginLeft: "auto", display: "block" }} src="https://i.pinimg.com/originals/19/f4/de/19f4de41f41a880b88fd7c4bca036d11.jpg" alt="Covington Square"></img>
-                <a style={{ fontSize: "10px", textAlign: "center" }}href="https://www.markchandlerphotography.com/">Mark Chandler Photography®</a>
+                <a style={{ fontSize: "10px", display: "block", marginLeft: "auto", marginRight: "auto" }}href="https://www.markchandlerphotography.com/">Mark Chandler Photography®</a>
                 <br></br>
                 <br></br>
                 <p style={{ textAlign: "center", fontFamily: "Work Sans" }}>
