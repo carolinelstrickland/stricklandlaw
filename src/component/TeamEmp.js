@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom"
 
 class TeamEmp extends Component {
     state = { show: true }
-    render() {
+    render() { 
         return (
             <Zoom>
                 
@@ -21,7 +21,7 @@ class TeamEmp extends Component {
                             </h4>
                                     <img src="https://www.google.com/imgres?imgurl=http%3A%2F%2Fqnimate.com%2Fwp-content%2Fuploads%2F2014%2F03%2Fimages2.jpg&imgrefurl=http%3A%2F%2Fqnimate.com%2Funderstanding-html-img-tag%2F&tbnid=RYBz6TYw2D7ZZM&vet=12ahUKEwjiuIfkuYHuAhXiGd8KHXFNB_kQMygGegUIARDMAQ..i&docid=2QpCn8mhLjh9DM&w=800&h=400&q=img&ved=2ahUKEwjiuIfkuYHuAhXiGd8KHXFNB_kQMygGegUIARDMAQ"></img>
                                     <br></br>
-                                    <p style={{ fontWeight: "bold", fontSize: "20px" }}>1962-2019</p>
+                                    <p style={{ fontFamily: "Work Sans", fontWeight: "bold", fontSize: "20px" }}>1962-2019</p>
                                 </div>
                             </div>
                         </div>
