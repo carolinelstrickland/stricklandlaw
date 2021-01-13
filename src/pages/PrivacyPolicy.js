@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
 
             <div>
                 <PrivacyPol/>
-                {/* <PrivacyPolForm/> */}
+                <PrivacyPolForm/>
             </div>
 
         </div>
