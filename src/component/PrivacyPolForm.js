@@ -21,12 +21,32 @@ function PrivacyPolForm() {
     const handleClick = (e) => {
         e.preventDefault();
 
-        if(e.target.value.id === "firstName") {
+        if (e.target.value.id === "firstName") {
             setFirstName(e.target.value)
-        } else if(e.target.value.id === "lastName") {
+        } else if (e.target.value.id === "lastName") {
             setLastName(e.target.value)
         } else if (e.target.value.id === "inputAddress") {
             setAddress(e.target.va)
+        } else if (e.target.value.id === "inputAddress2") {
+            setAddress2(e.target.va)
+        } else if (e.target.value.id === "inputCity") {
+            setInputCity(e.target.va)
+        } else if (e.target.value.id === "inputState") {
+            setInputState(e.target.va)
+        } else if (e.target.value.id === "inputZip") {
+            setInputZip(e.target.va)
+        } else if (e.target.value.id === "complaint") {
+            setComplaint(e.target.va)
+        } else if (e.target.value.id === "date") {
+            setDate(e.target.va)
+        } else if (e.target.value.id === "fileNum") {
+            setFileNum(e.target.va)
+        } else if (e.target.value.id === "policyNum") {
+            setPolicyNum(e.target.va)
+        } else if (e.target.value.id === "inputType") {
+            setInputType(e.target.va)
+        } else if (e.target.value.id === "transaction") {
+            setTransaction(e.target.va)
         }
     }
 
@@ -52,11 +72,11 @@ function PrivacyPolForm() {
         axios.post("api/sendMail", dataToSubmit)
     }
 
-    https://localhost:3000
+    // https://localhost:3000
 
-    server
+    // server
 
-    http://local
+    // http://local
 
 
 
@@ -95,98 +115,98 @@ function PrivacyPolForm() {
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">State</label>
                     <select id="inputState" class="form-select" value={inputState} onChange={handleClick}>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="OH">Ohio</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="OR">Oregon</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="TX">Texas</option>
-                            <option value="UT">Utah</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WA">Washington</option>
-                            <option value="WV">West Virginia</option>
-                            <option value="WI">Wisconsin</option>
-                            <option value="WY">Wyoming</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" value={inputZip} onClick={handleClick}></input>
-                    </div>
-                    <div class="col-12">
-                        <label for="complaint" class="form-label">Consumer Complaint</label>
-                        <input type="text" class="form-control" id="complaint" placeholder="Text goes here" value={complaint} onChange={handleClick}></input>
-                    </div>
-                    <div class="col-12">
-                        <label for="date" class="form-label">Date of Complaint</label>
-                        <input type="date" class="form-control" id="date" placeholder="01/01/2021" value={date} onChange={handleClick}></input>
-                    </div>
-                    <div class="col-12">
-                        <label for="fileNum" class="form-label">Strickland File Number</label>
-                        <input type="text" class="form-control" id="fileNum" placeholder="1234" value={fileNum} onChange={handleClick}></input>
-                    </div>
-                    <div class="col-12">
-                        <label for="policyNum" class="form-label">Policy Number</label>
-                        <input type="text" class="form-control" id="policyNum" value={policyNum} onChange={handleClick}></input>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputType" class="form-label">Property Type</label>
-                        <select id="inputType" class="form-select" value={inputType} onChange={handleClick}>
-                            <option selected>Choose...</option>
-                            <option>Residential</option>
-                            <option>Commercial</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="transaction" class="form-label">Transaction Type </label>
-                        <input type="text" class="form-control" id="transaction" placeholder="Purchase, Refi, REO, etc." value={transaction} onChange={handleClick}></input>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Submit</button>
-                    </div>
-                </form>
-            </div>
-        )
-    
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" value={inputZip} onClick={handleClick}></input>
+                </div>
+                <div class="col-12">
+                    <label for="complaint" class="form-label">Consumer Complaint</label>
+                    <input type="text" class="form-control" id="complaint" placeholder="Text goes here" value={complaint} onChange={handleClick}></input>
+                </div>
+                <div class="col-12">
+                    <label for="date" class="form-label">Date of Complaint</label>
+                    <input type="date" class="form-control" id="date" placeholder="01/01/2021" value={date} onChange={handleClick}></input>
+                </div>
+                <div class="col-12">
+                    <label for="fileNum" class="form-label">Strickland File Number</label>
+                    <input type="text" class="form-control" id="fileNum" placeholder="1234" value={fileNum} onChange={handleClick}></input>
+                </div>
+                <div class="col-12">
+                    <label for="policyNum" class="form-label">Policy Number</label>
+                    <input type="text" class="form-control" id="policyNum" value={policyNum} onChange={handleClick}></input>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputType" class="form-label">Property Type</label>
+                    <select id="inputType" class="form-select" value={inputType} onChange={handleClick}>
+                        <option selected>Choose...</option>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="transaction" class="form-label">Transaction Type </label>
+                    <input type="text" class="form-control" id="transaction" placeholder="Purchase, Refi, REO, etc." value={transaction} onChange={handleClick}></input>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Submit</button>
+                </div>
+            </form>
+        </div>
+    )
+
 }
 
 export default PrivacyPolForm;

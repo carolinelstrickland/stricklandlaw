@@ -1,5 +1,4 @@
 .env
-.src/component/MapContainer
 # Mac file that stores custom attributes of its containing folder
 .DS_Store
 
