@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavBar from "../src/component/NavBar";
-import Landing from "../src/pages/Landing";
-import Links from "../src/pages/Links";
-import PrivacyPolicy from "../src/pages/PrivacyPolicy";
-import Team from "../src/pages/Team";
-import Services from "../src/pages/Services";
+import NavBar from "./component/NavBar";
+import Landing from "./pages/Landing";
+import Links from "./pages/Links";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Team from "./pages/Team";
+import Services from "./pages/Services";
 
 
 
