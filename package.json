@@ -12,14 +12,11 @@
     "bootstrap": "^4.5.3",
     "cookie-parser": "^1.4.5",
     "emailjs-com": "^2.6.4",
-
     "google-map-react": "^2.1.9",
     "google-maps-react": "^2.0.6",
-
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.6",
     "nodemailer": "^6.4.17",
-
     "react": "^17.0.1",
     "react-animations": "^1.0.0",
     "react-awesome-reveal": "^3.5.2",
