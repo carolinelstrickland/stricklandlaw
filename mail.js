@@ -26,7 +26,7 @@ const sendEmail = (to, name, type) => {
         service: "Gmail",
         auth: {
             user: "lucystrickland5@gmail.com",
-            pass: ""
+            pass: "ChicagoMW2020"
 
         }
     })
