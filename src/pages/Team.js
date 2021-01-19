@@ -1,5 +1,7 @@
 import React, { useState, Component } from 'react';
 import TeamEmp from "../component/TeamEmp"
+import "../component/style/teamemp.css"
+
 
 class Team extends Component {
     
@@ -7,9 +9,11 @@ class Team extends Component {
 
         return (
             <div>
-            <img src="..//img/law.JPEG"
-              style={{height:"600px", width:"100%", opacity: 1 }}></img>
+            <img src="..//img/image003.jpg"
+              style={{height:"800px", width:"100%", opacity: .4 }}></img>
+              <div className="topLeft">
             <TeamEmp />
+            </div>
             </div>
         );
 

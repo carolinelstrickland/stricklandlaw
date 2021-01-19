@@ -25,12 +25,18 @@ h3{
     /* add font here */
 }
 
-.container{
+/* .container{
    background-color: rgb(192, 206, 206);
 }
 
 body{
     background-color: rgb(192, 206, 206);
+} */
+
+.topLeft{
+    position: absolute;
+    top: 60px;
+    left: 16px;
 }
 
 /* .box {
