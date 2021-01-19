@@ -25,28 +25,28 @@ function PrivacyPolForm() {
             setFirstName(e.target.value)
         } else if (e.target.value.id === "lastName") {
             setLastName(e.target.value)
-        } else if (e.target.value.id === "inputAddress") {
-            setAddress(e.target.va)
-        } else if (e.target.value.id === "inputAddress2") {
-            setAddress2(e.target.va)
-        } else if (e.target.value.id === "inputCity") {
-            setInputCity(e.target.va)
-        } else if (e.target.value.id === "inputState") {
-            setInputState(e.target.va)
-        } else if (e.target.value.id === "inputZip") {
-            setInputZip(e.target.va)
-        } else if (e.target.value.id === "complaint") {
-            setComplaint(e.target.va)
-        } else if (e.target.value.id === "date") {
-            setDate(e.target.va)
-        } else if (e.target.value.id === "fileNum") {
-            setFileNum(e.target.va)
-        } else if (e.target.value.id === "policyNum") {
-            setPolicyNum(e.target.va)
-        } else if (e.target.value.id === "inputType") {
-            setInputType(e.target.va)
-        } else if (e.target.value.id === "transaction") {
-            setTransaction(e.target.va)
+        // } else if (e.target.value.id === "inputAddress") {
+        //     setAddress(e.target.va)
+        // } else if (e.target.value.id === "inputAddress2") {
+        //     setAddress2(e.target.value)
+        // } else if (e.target.value.id === "inputCity") {
+        //     setInputCity(e.target.va)
+        // } else if (e.target.value.id === "inputState") {
+        //     setInputState(e.target.va)
+        // } else if (e.target.value.id === "inputZip") {
+        //     setInputZip(e.target.va)
+        // } else if (e.target.value.id === "complaint") {
+        //     setComplaint(e.target.va)
+        // } else if (e.target.value.id === "date") {
+        //     setDate(e.target.va)
+        // } else if (e.target.value.id === "fileNum") {
+        //     setFileNum(e.target.va)
+        // } else if (e.target.value.id === "policyNum") {
+        //     setPolicyNum(e.target.va)
+        // } else if (e.target.value.id === "inputType") {
+        //     setInputType(e.target.va)
+        // } else if (e.target.value.id === "transaction") {
+        //     setTransaction(e.target.va)
         }
     }
 
@@ -69,14 +69,14 @@ function PrivacyPolForm() {
             transaction
         }
 
-        axios.post("api/sendMail", dataToSubmit)
+        axios.post("/api/sendMail", dataToSubmit)
     }
 
-    // https://localhost:3000
+    // http://localhost:3000
 
     // server
 
-    // http://local
+    // http://localhost:5000
 
 
 
@@ -94,27 +94,27 @@ function PrivacyPolForm() {
             <form class="row g-3" onSubmit={handleSubmit}>
                 <div class="col-md-6">
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="firstName" class="form-control" id="firstName" value={firstName} onChange={handleClick}></input>
+                    <input type="firstName" class="form-control" id="firstName" value={firstName} onChange={e => setFirstName(e.target.value)}></input>
                 </div>
                 <div class="col-md-6">
                     <label for="lastName" class="form-label">Last Name</label>
-                    <input type="lastName" class="form-control" id="lastName" value={lastName} onChange={handleClick}></input>
+                    <input type="lastName" class="form-control" id="lastName" value={lastName} onChange={e => setLastName(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" value={inputAddress} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" value={inputAddress} onChange={e => setAddress(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" value={inputAddress2} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" value={inputAddress2} onChange={e => setAddress2(e.target.value)}></input>
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity" value={inputCity} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="inputCity" value={inputCity} onChange={e => setInputCity(e.target.value)}></input>
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select" value={inputState} onChange={handleClick}>
+                    <select id="inputState" class="form-select" value={inputState} onChange={e => setInputState(e.target.value)}>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -170,27 +170,27 @@ function PrivacyPolForm() {
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip" value={inputZip} onClick={handleClick}></input>
+                    <input type="number" class="form-control" id="inputZip" value={inputZip} onChange={e => setInputZip(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="complaint" class="form-label">Consumer Complaint</label>
-                    <input type="text" class="form-control" id="complaint" placeholder="Text goes here" value={complaint} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="complaint" placeholder="Text goes here" value={complaint} onChange={e => setComplaint(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="date" class="form-label">Date of Complaint</label>
-                    <input type="date" class="form-control" id="date" placeholder="01/01/2021" value={date} onChange={handleClick}></input>
+                    <input type="date" class="form-control" id="date" placeholder="01/01/2021" value={date} onChange={e => setDate(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="fileNum" class="form-label">Strickland File Number</label>
-                    <input type="text" class="form-control" id="fileNum" placeholder="1234" value={fileNum} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="fileNum" placeholder="1234" value={fileNum} onChange={e => setFileNum(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <label for="policyNum" class="form-label">Policy Number</label>
-                    <input type="text" class="form-control" id="policyNum" value={policyNum} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="policyNum" value={policyNum} onChange={e => setPolicyNum(e.target.value)}></input>
                 </div>
                 <div class="col-md-4">
                     <label for="inputType" class="form-label">Property Type</label>
-                    <select id="inputType" class="form-select" value={inputType} onChange={handleClick}>
+                    <select id="inputType" class="form-select" value={inputType} onChange={e => setInputType(e.target.value)}>
                         <option selected>Choose...</option>
                         <option>Residential</option>
                         <option>Commercial</option>
@@ -198,7 +198,7 @@ function PrivacyPolForm() {
                 </div>
                 <div class="col-12">
                     <label for="transaction" class="form-label">Transaction Type </label>
-                    <input type="text" class="form-control" id="transaction" placeholder="Purchase, Refi, REO, etc." value={transaction} onChange={handleClick}></input>
+                    <input type="text" class="form-control" id="transaction" placeholder="Purchase, Refi, REO, etc." value={transaction} onChange={e => setTransaction(e.target.value)}></input>
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Submit</button>
