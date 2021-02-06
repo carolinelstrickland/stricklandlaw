@@ -1,3 +1,23 @@
+body, html {
+    height: 100%;
+    opacity: 0.1;
+}
+.bgImg{
+   /* The image used */
+   background-image: url("../style/img/Covington-Georgia.jpg");
+
+   /* Set a specific height */
+   min-height: 500px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;  
+}
+
+
+
 .firstrow{
     float: left;
 }
