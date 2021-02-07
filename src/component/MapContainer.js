@@ -1,13 +1,11 @@
 import React, { Component } from "react"
-import { Map, GoogleApiWrapper, Marker, InfoWindow, WrappedCard } from 'google-maps-react';
-import "./style/mapstyle.css";
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
 
 const mapStyles = {
   width: '50%',
   height: '50%',
 };
-
 
 const mapApiKey = process.env.REACT_APP_GOOGLE_API_KEY
 
@@ -35,42 +33,30 @@ export class MapContainer extends Component {
     }
   };
 
-
   render() {
     return (
       <Map
         google={this.props.google}
-        zoom={16}
+        zoom={14}
         style={mapStyles}
-        initialCenter={
-          {
-            lat: 33.59439,
-            lng: -83.85820
-          }
-        }
+        initialCenter={{ lat: 33.59439, lng: -83.85820 }}
       >
-        
         <Marker
           onClick={this.onMarkerClick}
           name={'Strickland Law'}
+
         />
+        <Marker />
+
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}
           onClose={this.onClose}
-          name={'Strickland Law'}
         >
-          <p className={"address"}>
-          1138 Conyers St. SE, Covington, Georgia 30014
-          </p>
-
-        
           <div>
-            <h4>{this.state.selectedPlace.name}</h4>
+            <h1>{this.state.selectedPlace.name}</h1>
           </div>
         </InfoWindow>
-
-
       </Map>
     );
   }
