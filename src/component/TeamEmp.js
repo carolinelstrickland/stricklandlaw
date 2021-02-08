@@ -6,11 +6,13 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Slide from "react-reveal/Slide"
 
+
 class TeamEmp extends Component {
     state = { show: true }
     render() {
         return (
-            <React.Fragment>
+            <Zoom>
+
 
                 {/* <Zoom> */}
 
@@ -165,11 +167,8 @@ class TeamEmp extends Component {
                 </Container>
 
 
-
-
-                {/* </div> */}
-                {/* </Zoom> */}
-            </React.Fragment>
+                </div>
+            </Zoom>
 
         )
 
