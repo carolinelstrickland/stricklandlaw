@@ -10,34 +10,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  
- }
-
-
-.firstrow{
-    float: left;
 }
 
-.secondrow{
-    float: right;
+
+.emailText{
+    font-size: 25px;
 }
 
-.thirdrow{
-
-    float: left;
-}
-
-.fourthrow{
-    float:right;
-}
-
-.lastrow{
-    float:left;
+.row{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(176, 171, 171));
 }
 
 /* title of team member */
 h3{
     padding: 10px;
     font-weight: bold;
+    text-decoration: underline;
     /* add font here */
 }
 
