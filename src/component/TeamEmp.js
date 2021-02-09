@@ -6,13 +6,11 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Slide from "react-reveal/Slide"
 
-
 class TeamEmp extends Component {
     state = { show: true }
     render() {
         return (
-            <Zoom>
-
+            <React.Fragment>
 
                 {/* <Zoom> */}
 
@@ -88,7 +86,7 @@ class TeamEmp extends Component {
                                         <br></br>
                                         <p className="emailText"> Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
-                                        <a href={`mailto:heather.adamson@strickland-law.com`}>
+                                            <a href={`mailto:heather.adamson@strickland-law.com`}>
                                                 <span
                                                     className="iconify language-icon mr-5"
                                                     data-icon="ic:outline-email"
@@ -119,14 +117,14 @@ class TeamEmp extends Component {
                                         <p className="emailText">
                                             Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
-                                        <a href={`mailto:chelsey.whisnant@strickland-law.com`}>
-                                            <span
-                                                className="iconify language-icon mr-5"
-                                                data-icon="ic:outline-email"
-                                                data-inline="false"
-                                                style={{ color: "black", height: "40px", width: "40px" }}
-                                            ></span></a>
-                                            </p>
+                                            <a href={`mailto:chelsey.whisnant@strickland-law.com`}>
+                                                <span
+                                                    className="iconify language-icon mr-5"
+                                                    data-icon="ic:outline-email"
+                                                    data-inline="false"
+                                                    style={{ color: "black", height: "40px", width: "40px" }}
+                                                ></span></a>
+                                        </p>
                                     </div>
                                 </div>
                             </Col>
@@ -150,13 +148,13 @@ class TeamEmp extends Component {
                                         <p className="emailText">
                                             Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
-                                        <a href={`mailto:carol.ledford@strickland-law.com`}>
-                                            <span
-                                                className="iconify language-icon mr-5"
-                                                data-icon="ic:outline-email"
-                                                data-inline="false"
-                                                style={{ color: "black", height: "40px", width: "40px" }}
-                                            ></span></a>
+                                            <a href={`mailto:carol.ledford@strickland-law.com`}>
+                                                <span
+                                                    className="iconify language-icon mr-5"
+                                                    data-icon="ic:outline-email"
+                                                    data-inline="false"
+                                                    style={{ color: "black", height: "40px", width: "40px" }}
+                                                ></span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -165,7 +163,13 @@ class TeamEmp extends Component {
                     </Slide>
 
                 </Container>
-            </Zoom>
+
+
+
+
+                {/* </div> */}
+                {/* </Zoom> */}
+            </React.Fragment>
 
         )
 
