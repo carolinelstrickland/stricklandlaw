@@ -9,11 +9,9 @@ class Team extends Component {
 
         return (
             <div>
-            <img src="..//img/image003.jpg"
-              style={{height:"800px", width:"100%", opacity: .4 }}></img>
-              <div className="topLeft">
+              
             <TeamEmp />
-            </div>
+            
             </div>
         );
 
