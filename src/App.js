@@ -6,7 +6,7 @@ import Links from "./pages/Links";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Team from "./pages/Team";
 import Services from "./pages/Services";
-
+import Contact from "./pages/Contact"
 
 
 
@@ -21,6 +21,8 @@ function App() {
           <Route exact path="/links" component={Links} />
           <Route exact path="/team" component={Team} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
+          <Route exact path="/contact" component={Contact} />
+
        </div>
       </Router>
     </React.Fragment>
