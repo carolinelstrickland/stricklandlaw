@@ -165,9 +165,6 @@ class TeamEmp extends Component {
                     </Slide>
 
                 </Container>
-
-
-                </div>
             </Zoom>
 
         )
