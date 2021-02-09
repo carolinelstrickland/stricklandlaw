@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper, Marker, InfoWindow, WrappedCard } from 'google-maps-react';
 import "./style/mapstyle.css";
+import { Container } from "react-bootstrap";
 
 
 const mapStyles = {
@@ -38,40 +39,44 @@ export class MapContainer extends Component {
 
   render() {
     return (
-      <Map
-        google={this.props.google}
-        zoom={16}
-        style={mapStyles}
-        initialCenter={
-          {
-            lat: 33.59439,
-            lng: -83.85820
+      <Container style={{textAlign:"center", alignItems:"center"}}>
+        <Map
+          google={this.props.google}
+          zoom={16}
+          initialCenter={
+            {
+              lat: 33.59439,
+              lng: -83.85820
+            }
           }
-        }
-      >
-        
-        <Marker
-          onClick={this.onMarkerClick}
-          name={'Strickland Law'}
-        />
-        <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}
-          onClose={this.onClose}
-          name={'Strickland Law'}
+          scrollwheel={false}
+          style={{textAlign:"center", width: '50%',
+          height: '50%'}}
         >
-          <p className={"address"}>
-          1138 Conyers St. SE, Covington, Georgia 30014
+
+          <Marker
+            onClick={this.onMarkerClick}
+            name={'Strickland Law'}
+          />
+          <InfoWindow
+            marker={this.state.activeMarker}
+            visible={this.state.showingInfoWindow}
+            onClose={this.onClose}
+            name={'Strickland Law'}
+          >
+            <p className={"address"}>
+              1138 Conyers St. SE, Covington, Georgia 30014
           </p>
 
-        
-          <div>
-            <h4>{this.state.selectedPlace.name}</h4>
-          </div>
-        </InfoWindow>
+
+            <div>
+              <h4>{this.state.selectedPlace.name}</h4>
+            </div>
+          </InfoWindow>
 
 
-      </Map>
+        </Map>
+      </Container>
     );
   }
 }
