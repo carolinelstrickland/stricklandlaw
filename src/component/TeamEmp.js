@@ -15,7 +15,7 @@ class TeamEmp extends Component {
                 {/* <Zoom> */}
 
                 {/* <div style={{ backgroundColor: "gray", fontFamily: "Work Sans" }}> */}
-                <Container fluid="md" style={{ fontFamily: "Work Sans", border: "solid" }}>
+                <Container fluid="md" style={{ fontFamily: "Work Sans", border: "solid", backgroundColor:"white" }}>
                     <div className="bgImg"></div>
                     <Slide right>
                         <Row className="bgColor">

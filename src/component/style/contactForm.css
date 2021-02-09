@@ -3,8 +3,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: white;
+    border: solid;
+    padding: 70px;
+    margin: 20px;
 }
 
   .bgImg{
     background-repeat: repeat-y;
   }
+
+  .contactLabel{
+    font-size: 30px;
+    
+  }
+
+ 

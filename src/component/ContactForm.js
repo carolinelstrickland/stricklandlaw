@@ -49,9 +49,9 @@ class ContactForm extends Component {
     return (
       <React.Fragment>
         <img className="bgImg" style={{opacity:".2", height:"100%", width:"100%"}}src="..//img/image003.jpg"></img>
-        <form className="centered" onSubmit={this.handleSubmit.bind(this)} method="POST">
+        <form className="centered" onSubmit={this.handleSubmit.bind(this)} method="POST" style={{fontFamily: "Work Sans"}}>
           <div>
-            <label htmlFor="name">Name:</label>
+            <label className="contactLabel" htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
@@ -61,7 +61,7 @@ class ContactForm extends Component {
             />
           </div>
           <div>
-            <label htmlFor="email">Email:</label>
+            <label className="contactLabel" htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -71,7 +71,7 @@ class ContactForm extends Component {
             />
           </div>
           <div>
-            <label htmlFor="message">Message:</label>
+            <label className="contactLabel" htmlFor="message">Message:</label>
             <textarea
               id="message"
               value={this.state.message}
@@ -79,7 +79,7 @@ class ContactForm extends Component {
               required
             />
           </div>
-          <button type="submit">{buttonText}</button>
+          <button className="contactSubmit" type="submit">{buttonText}</button>
         </form>
       </React.Fragment>
     );

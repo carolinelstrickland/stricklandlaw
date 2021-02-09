@@ -13,6 +13,7 @@ import Contact from "./pages/Contact"
 function App() {
   return (
     <React.Fragment>
+      <img src="..//img/banner.png" style={{height:"200px", width:"100%"}}></img>
       <NavBar />
       <Router>
         <div className="App">

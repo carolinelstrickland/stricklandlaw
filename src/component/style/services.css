@@ -1,0 +1,40 @@
+.servicesbg{
+    background-color:#4a919e;
+}
+
+.links{
+    border: solid;
+    padding: 20px;
+    background-color: #212e53;
+    box-shadow: 5px 10px #212e53;
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+.res{
+    border: solid;
+    padding: 20px;
+    background-color: #212e53;
+    box-shadow: 5px 10px #212e53;
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+}
+
+.servicesLi{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicesH1{
+    color: white;
+    text-align: center;
+}
+
+.helpfulLinkli{
+    border: solid;
+    border-color: white;
+    text-align: center;
+    color: black;
+    list-style-type: none;
+}
