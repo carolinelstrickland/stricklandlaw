@@ -15,7 +15,7 @@ class TeamEmp extends Component {
                 {/* <Zoom> */}
 
                 {/* <div style={{ backgroundColor: "gray", fontFamily: "Work Sans" }}> */}
-                <Container fluid="md" style={{ fontFamily: "Work Sans", border: "solid" }}>
+                <Container fluid="md" style={{ fontFamily: "Work Sans", border: "solid", backgroundColor:"white" }}>
                     <div className="bgImg"></div>
                     <Slide right>
                         <Row className="bgColor">
@@ -55,7 +55,7 @@ class TeamEmp extends Component {
                                         <img src="..//img/IMG_1256.jpeg"
                                             style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
                                         <br></br>
-                                        <p className="emailText"> Email me
+                                        <p className="emailText" style={{padding:"20px"}}> Email me
                                             <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
                                             <a href={`mailto:David.strickland@strickland-law.com`}>
                                                 <span
@@ -84,7 +84,7 @@ class TeamEmp extends Component {
                                     </h4>
                                         <img src="..//img/HEA Office.jpg" style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
                                         <br></br>
-                                        <p className="emailText"> Email me
+                                        <p className="emailText" style={{padding:"20px"}}> Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
                                             <a href={`mailto:heather.adamson@strickland-law.com`}>
                                                 <span
@@ -112,9 +112,9 @@ class TeamEmp extends Component {
                                             Chelsey C. whisnant
 
                             </h4>
-                                        <img src="..//img/FullSizeRender.jpeg" style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                        <img src="..//img/IMG_1248.jpeg" style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
                                         <br></br>
-                                        <p className="emailText">
+                                        <p className="emailText" style={{padding:"20px"}}>
                                             Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
                                             <a href={`mailto:chelsey.whisnant@strickland-law.com`}>
@@ -130,6 +130,7 @@ class TeamEmp extends Component {
                             </Col>
                         </Row>
                     </Slide>
+                  
                     <Slide right>
                         <Row>
                             <Col>
@@ -142,10 +143,10 @@ class TeamEmp extends Component {
                                             Carol J. Ledford
 
                                     </h4>
-                                        <img src="..//img/IMG_1248.jpeg"
-                                            style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                        <img src="..//img/FullSizeRender.jpeg"
+                                            style={{ height: "600px", width: "500px", borderRadius: "5%" }}></img>
                                         <br></br>
-                                        <p className="emailText">
+                                        <p className="emailText" style={{padding:"20px"}}>
                                             Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
                                             <a href={`mailto:carol.ledford@strickland-law.com`}>

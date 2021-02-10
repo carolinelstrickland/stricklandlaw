@@ -7,8 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NavBar() {
     return (
         <React.Fragment>
-            <Navbar style={{ fontFamily: "Work Sans", backgroundColor: "#F5F5F5", width: "100%"}} expand="lg">
-                <Navbar.Brand href="#home">Strickland and Strickland, LLP</Navbar.Brand>
+            <Navbar style={{ fontFamily: "Work Sans", backgroundColor: "#F5F5F5", width: "100%",}} expand="lg">
+                {/* <Navbar.Brand href="#home">Strickland and Strickland, LLP</Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav style={{ fontFamily: "Work Sans" }} className="mr-auto">

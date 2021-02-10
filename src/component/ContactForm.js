@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./style/contactForm.css"
 
 class ContactForm extends Component {
   constructor() {
@@ -9,8 +10,8 @@ class ContactForm extends Component {
       email: "",
       message: "",
       status: "Submit"
-    };   
-  } 
+    };
+  }
 
   handleChange(event) {
     const field = event.target.id;
@@ -24,8 +25,8 @@ class ContactForm extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();  
-    this.setState({ status: "Sending" });  
+    event.preventDefault();
+    this.setState({ status: "Sending" });
     axios({
       method: "POST",
       url: "http://localhost:5000/contact",
@@ -40,46 +41,49 @@ class ContactForm extends Component {
     });
   }
 
-  
+
 
 
   render() {
     let buttonText = this.state.status;
-    return (      
-        <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-            <div>
-            <label htmlFor="name">Name:</label>
+    return (
+      <React.Fragment>
+        <img className="bgImg" style={{opacity:".2", height:"100%", width:"100%"}}src="..//img/image003.jpg"></img>
+        <form className="centered" onSubmit={this.handleSubmit.bind(this)} method="POST" style={{fontFamily: "Work Sans"}}>
+          <div>
+            <label className="contactLabel" htmlFor="name">Name:</label>
             <input
-                type="text"
-                id="name"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this)}
-                required
+              type="text"
+              id="name"
+              value={this.state.name}
+              onChange={this.handleChange.bind(this)}
+              required
             />
-            </div>
-            <div>
-            <label htmlFor="email">Email:</label>
+          </div>
+          <div>
+            <label className="contactLabel" htmlFor="email">Email:</label>
             <input
-                type="email"
-                id="email"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this)}
-                required
+              type="email"
+              id="email"
+              value={this.state.email}
+              onChange={this.handleChange.bind(this)}
+              required
             />
-            </div>
-            <div>
-            <label htmlFor="message">Message:</label>
+          </div>
+          <div>
+            <label className="contactLabel" htmlFor="message">Message:</label>
             <textarea
-                id="message"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this)}
-                required
+              id="message"
+              value={this.state.message}
+              onChange={this.handleChange.bind(this)}
+              required
             />
-            </div>
-            <button type="submit">{buttonText}</button>
-        </form>      
+          </div>
+          <button className="contactSubmit" type="submit">{buttonText}</button>
+        </form>
+      </React.Fragment>
     );
-}
+  }
 }
 
 export default ContactForm;

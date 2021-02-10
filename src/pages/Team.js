@@ -8,7 +8,7 @@ class Team extends Component {
     render() {
 
         return (
-            <div>
+            <div style={{backgroundColor:"#212e53" }}>
               
             <TeamEmp />
             
