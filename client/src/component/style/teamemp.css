@@ -1,0 +1,56 @@
+.bgImg{
+    /* The image used */
+    background-image: url("../style/img/Covington-Georgia.jpg");
+ 
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+.emailText{
+    font-size: 25px;
+}
+
+.row{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(176, 171, 171));
+}
+
+/* title of team member */
+h3{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    /* add font here */
+}
+
+/* .container{
+   background-color: rgb(192, 206, 206);
+}
+
+body{
+    background-color: rgb(192, 206, 206);
+} */
+
+.topLeft{
+    position: absolute;
+    top: 60px;
+    left: 16px;
+}
+
+/* .box {
+    position: relative;
+    }
+    .box-entered {
+    color: red;
+    }
+    .box-entering {
+    animation-name: example;
+    animation-duration: 4s;
+    } */
+
