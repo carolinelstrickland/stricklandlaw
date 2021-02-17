@@ -59,12 +59,12 @@ class PrivacyPolForm extends Component {
                 <p>
                     CONSUMER COMPLAINT FORM
                 <br></br>
-                    <br></br>
+                <br></br>
                 Please complete appropriate section(s) below, then “submit” using the following format:
                 <br></br>
                     <br></br>
                 </p>
-                <form onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form onSubmit={this.handleSubmit.bind(this)} method="POST" >
                     <div>
                         <label htmlFor="name">Name:</label>
                         <input

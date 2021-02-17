@@ -30,7 +30,7 @@ class TeamEmp extends Component {
 
                                     </h4>
                                         <img src="..//img/CharlesStrickland.jpg"
-                                            style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                            style={{ height: "350px", width: "300px", borderRadius: "5%" }}></img>
                                         <br></br>
                                         <p style={{ fontFamily: "Work Sans", fontWeight: "bold", fontSize: "20px" }}>1962-2019</p>
                                     </div>
@@ -53,7 +53,7 @@ class TeamEmp extends Component {
 
                             </h4>
                                         <img src="..//img/IMG_1256.jpeg"
-                                            style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                            style={{ height: "350px", width: "300px", borderRadius: "5%" }}></img>
                                         <br></br>
                                         <p className="emailText" style={{padding:"20px"}}> Email me
                                             <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
@@ -82,7 +82,7 @@ class TeamEmp extends Component {
                                             Heather E. Adamson
 
                                     </h4>
-                                        <img src="..//img/HEA-3-1.png" style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                        <img src="..//img/HEA-3-1.png" style={{ height: "350px", width: "300px", borderRadius: "5%" }}></img>
                                         <br></br>
                                         <p className="emailText" style={{padding:"20px"}}> Email me
                                         <span class="iconify" data-icon="bi:arrow-bar-right" data-inline="false"></span>
@@ -112,7 +112,7 @@ class TeamEmp extends Component {
                                             Chelsey C. whisnant
 
                             </h4>
-                                        <img src="..//img/IMG_1248.jpeg" style={{ height: "500px", width: "500px", borderRadius: "5%" }}></img>
+                                        <img src="..//img/IMG_1248.jpeg" style={{ height: "350px", width: "300px", borderRadius: "5%" }}></img>
                                         <br></br>
                                         <p className="emailText" style={{padding:"20px"}}>
                                             Email me
@@ -144,7 +144,7 @@ class TeamEmp extends Component {
 
                                     </h4>
                                         <img src="..//img/FullSizeRender.jpeg"
-                                            style={{ height: "600px", width: "500px", borderRadius: "5%" }}></img>
+                                            style={{ height: "350px", width: "300px", borderRadius: "5%" }}></img>
                                         <br></br>
                                         <p className="emailText" style={{padding:"20px"}}>
                                             Email me

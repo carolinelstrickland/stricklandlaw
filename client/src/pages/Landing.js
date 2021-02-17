@@ -5,7 +5,7 @@ import MapContainer from "../component/MapContainer";
 
 function Landing () {
  return (
-     <div>
+     <div style={{backgroundColor: "#212e53", color: "#ffffe6"}}>
          <LandingLayout />
          <Contact />
          <MapContainer />

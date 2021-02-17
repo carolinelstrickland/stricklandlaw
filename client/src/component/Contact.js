@@ -21,6 +21,8 @@ function Contact() {
                 </li>
                 </ul>
             </Container>
+            <br></br>
+            <br></br>
         </React.Fragment>
     )
 }

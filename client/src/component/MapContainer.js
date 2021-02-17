@@ -39,8 +39,9 @@ export class MapContainer extends Component {
 
   render() {
     return (
-      <Container style={{textAlign:"center", alignItems:"center"}}>
-        <Map
+      <div style={{width: '100%', marginLeft: "auto", marginRight: "auto", display: "inline"}}>
+      <Container>
+        <Map 
           google={this.props.google}
           zoom={16}
           initialCenter={
@@ -77,6 +78,7 @@ export class MapContainer extends Component {
 
         </Map>
       </Container>
+      </div>
     );
   }
 }
